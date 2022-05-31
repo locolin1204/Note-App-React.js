@@ -18,6 +18,8 @@ code {
   justify-content: space-between;
 }
 
+/* DARK MODE  */
+
 .dark-mode {
   background-color: #28282B;
 }
@@ -31,14 +33,13 @@ code {
   color: #e7e7e7;
 }
 
-.dark-mode .toggle{
+.dark-mode .toggle {
   background-color: #515151;
   color: #e7e7e7;
 }
 
 .dark-mode .toggle:hover{
   background-color: #727272;
-
 }
 
 .dark-mode .save:hover{
@@ -52,6 +53,7 @@ code {
 
 .dark-mode .note{
   background-color: #723ed4;
+  /* background: linear-gradient(30deg, rgba(204,43,94,1) 5%, rgba(117,58,136,1) 70%); */
   color: #e7e7e7;
 }
 
@@ -59,13 +61,16 @@ code {
   background-color: #bb3ed4;
 }
 
-.dark-mode textarea, .dark-mode textarea::placeholder{
+.dark-mode textarea, .dark-mode ::placeholder, .dark-mode input{
   font-family: inherit;
   color: #dadada;
 }
 
-.dark-mode textarea {
+.dark-mode .search{
+  background-color: #898989;
+  color: #e7e7e7;
 }
+/* DEFAULT MODE */
 
 .container{
   max-width: 960px;
@@ -92,8 +97,6 @@ textarea{
   background-color: inherit;
   font-family: inherit;
 }
-
-
 
 textarea:focus{
   outline: none;
@@ -126,6 +129,7 @@ textarea:focus{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 700;
 }
 
 .delete-icon {
@@ -150,6 +154,7 @@ textarea:focus{
 .search input{
   border: none;
   background-color: inherit;
+  width: 100%;
 }
 
 .search input:focus{
