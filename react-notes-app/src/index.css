@@ -18,12 +18,53 @@ code {
   justify-content: space-between;
 }
 
-.dark-mode{
+.dark-mode {
   background-color: #28282B;
 }
 
 .dark-mode h1{
   color: white;
+}
+
+.dark-mode .save{
+  background-color: #8d2ea0;
+  color: #e7e7e7;
+}
+
+.dark-mode .toggle{
+  background-color: #515151;
+  color: #e7e7e7;
+}
+
+.dark-mode .toggle:hover{
+  background-color: #727272;
+
+}
+
+.dark-mode .save:hover{
+  background-color: #953ca7;
+  cursor: pointer;
+}
+
+.dark-mode .delete-icon:hover{
+  background-color: #5b32a7;
+}
+
+.dark-mode .note{
+  background-color: #723ed4;
+  color: #e7e7e7;
+}
+
+.dark-mode .note.new{
+  background-color: #bb3ed4;
+}
+
+.dark-mode textarea, .dark-mode textarea::placeholder{
+  font-family: inherit;
+  color: #dadada;
+}
+
+.dark-mode textarea {
 }
 
 .container{
@@ -49,20 +90,23 @@ textarea{
   border: none;
   resize: none;
   background-color: inherit;
+  font-family: inherit;
 }
+
+
 
 textarea:focus{
   outline: none;
 }
 
-.save{
+.save, .toggle{
   background-color: #ededed;
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
 }
 
-.save:hover{
+.save:hover, .toggle:hover{
   background-color: #f9f9f9;
   cursor: pointer;
 }

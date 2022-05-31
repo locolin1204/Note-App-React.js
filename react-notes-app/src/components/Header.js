@@ -11,7 +11,7 @@ const Header = ({ handleToggleDarkMode }) => {
                         )
                     }
                 }
-                className="save"
+                className="toggle"
                 >
                 Toggle Mode
                 </button>
