@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "df7314bc3f1f89c970c2",
-    "url": "/React.js-Note-App/static/css/main.3fba3f39.chunk.css"
+    "revision": "0f62728255d6a080cbeb",
+    "url": "/React.js-Note-App/static/css/main.6e684dc7.chunk.css"
   },
   {
-    "revision": "df7314bc3f1f89c970c2",
-    "url": "/React.js-Note-App/static/js/main.df7314bc.chunk.js"
+    "revision": "0f62728255d6a080cbeb",
+    "url": "/React.js-Note-App/static/js/main.0f627282.chunk.js"
   },
   {
     "revision": "1bcbea24a65dd7187dbd",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/React.js-Note-App/static/js/runtime~main.d3caa396.js"
   },
   {
-    "revision": "ed2081f5bba3c75711fe5260c074a4ad",
+    "revision": "4a079abd3b39ea7968183eebe36231b6",
     "url": "/React.js-Note-App/index.html"
   }
 ];
