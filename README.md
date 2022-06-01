@@ -7,8 +7,12 @@ You may try out the Note App [here](https://locolin1204.github.io/React.js-Note-
 ### __Searching Notes__
 You may type in the search bar to filter out your notes!
 
+<br>
+
 ### __Dark Mode__
 You may press the `Toggle Mode` to switch between _light_ and _dark_ mode.
+
+<br>
 
 ### __Adding and Deleting Notes__
 Type in the notes and save it or press the trash can icon to delete it!
