@@ -33,12 +33,12 @@ code {
   color: #e7e7e7;
 }
 
-.dark-mode .toggle {
+.dark-mode .toggle, .dark-mode .reset{
   background-color: #515151;
   color: #e7e7e7;
 }
 
-.dark-mode .toggle:hover{
+.dark-mode .toggle:hover, .dark-mode .reset:hover{
   background-color: #727272;
 }
 
@@ -102,14 +102,19 @@ textarea:focus{
   outline: none;
 }
 
-.save, .toggle{
+button {
   background-color: #ededed;
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
 }
 
-.save:hover, .toggle:hover{
+.toggle, .rest{
+	margin-left: 1em;
+}
+
+
+button:hover {
   background-color: #f9f9f9;
   cursor: pointer;
 }
@@ -159,4 +164,8 @@ textarea:focus{
 
 .search input:focus{
   outline: none;
+}
+
+.top-right-buttons{
+	display: flex;
 }
