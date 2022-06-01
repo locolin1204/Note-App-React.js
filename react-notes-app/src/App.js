@@ -74,10 +74,18 @@ const App = () => {
     setNotes(originalNotes);
   }
 
+  const deleteAll = () => {
+    setNotes([]);
+  }
+
   return (
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
-      <Header handleToggleDarkMode = {setDarkMode} handleReset = {setReset} />
+      <Header
+        handleToggleDarkMode = {setDarkMode}
+        handleReset = {setReset}
+        handleDeleteAll = {deleteAll}
+        />
       <Search handleSearchNote = {setSearchText} />
       <NotesList 
         notes={notes.filter((note) => note.text.toLowerCase().includes(searchText.toLowerCase()))}

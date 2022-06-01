@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ handleToggleDarkMode, handleReset }) => {
+const Header = ({ handleToggleDarkMode, handleReset, handleDeleteAll }) => {
     return(
         <div className="header" >
             <h1>Notes</h1>
@@ -22,6 +22,14 @@ const Header = ({ handleToggleDarkMode, handleReset }) => {
                 >
                 Reset
                 </button>
+
+                <button 
+                onClick={() => {handleDeleteAll()}}
+                className="reset"
+                >
+                Delete All
+                </button>
+
             </div>
         </div>
     )
