@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/React.js-Note-App/precache-manifest.cde919df92aadb5d1bf35810489a28cf.js"
+  "/Note-App-React.js/precache-manifest.5af6f9db552b119139bd423a8e95f8a4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/React.js-Note-App/index.html", {
+workbox.routing.registerNavigationRoute("/Note-App-React.js/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
