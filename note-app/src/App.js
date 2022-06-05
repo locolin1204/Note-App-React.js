@@ -3,6 +3,8 @@ import { nanoid } from 'nanoid';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 import Header from './components/Header';
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+
 
 const App = () => {
 
@@ -79,7 +81,7 @@ const App = () => {
   }
 
   return (
-    <div className={`${darkMode && "dark-mode"}`}>
+    <div className={`${darkMode && "dark-mode"} light-mode`}>
       <div className="container">
       <Header
         handleToggleDarkMode = {setDarkMode}

@@ -12,15 +12,10 @@ code {
     monospace;
 }
 
-.header {
-  display:flex;
-  align-items: center ;
-  justify-content: space-between;
-}
-
 /* DARK MODE  */
 
 .dark-mode {
+  transition: 0.3s;
   background-color: #28282B;
 }
 
@@ -70,7 +65,18 @@ code {
   background-color: #898989;
   color: #e7e7e7;
 }
+
 /* DEFAULT MODE */
+
+.light-mode {
+  transition: 0.3s;
+}
+
+.header {
+  display:flex;
+  align-items: center ;
+  justify-content: space-between;
+}
 
 .container{
   max-width: 960px;
@@ -115,7 +121,7 @@ button {
 
 
 button:hover {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   cursor: pointer;
 }
 

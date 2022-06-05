@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { enterAnimation } from './NotesList';
 const AddNote = ( {handleAddNote} )  => {
     const [noteText, setNoteText] = useState("");
     const characterLimit = 200;
@@ -14,21 +16,23 @@ const AddNote = ( {handleAddNote} )  => {
             setNoteText("");
         }
     }
-    return(
-    <div className="note new">
-        <textarea 
-        rows="8"
-        cols="10"
-        placeholder="Type to add a note..."
-        value = {noteText}
-        onChange={handleChange}
-        ></textarea>
-        <div className="note-footer">
-            <small>{characterLimit-noteText.length} Remaining</small>
-            <button className="save" onClick={handleSaveCLick}>Save</button>
-        </div>
-    </div>
-    )
+    return (
+			<motion.div className="note new" {...enterAnimation}>
+				<textarea
+					rows="8"
+					cols="10"
+					placeholder="Type to add a note..."
+					value={noteText}
+					onChange={handleChange}
+				></textarea>
+				<div className="note-footer">
+					<small>{characterLimit - noteText.length} Remaining</small>
+					<button className="save" onClick={handleSaveCLick}>
+						Save
+					</button>
+				</div>
+			</motion.div>
+		);
 }
 
 export default AddNote;
