@@ -136,6 +136,15 @@ button:hover {
   white-space: pre-wrap;
 }
 
+.left-container-bottom {
+  width:70%;
+}
+
+.right-container-bottom {
+  width: 30%;
+}
+
+
 .note-footer {
   display: flex;
   align-items: center;
@@ -174,4 +183,66 @@ button:hover {
 
 .top-right-buttons{
 	display: flex;
+}
+
+.container-bottom{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+}
+
+.delete-notes-list{
+  /* border: 1px solid red; */
+}
+
+.delete-note {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4em;
+  display: flex;
+  align-items: center;
+}
+
+.delete-note:hover{
+  visibility: visible;
+}
+
+.delete-notes-heading {
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+}
+
+.delete-note .cross-icon{
+  opacity: 0;
+  transition: 1s;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.delete-note:hover .cross-icon{
+  opacity: 100;
+}
+
+.delete-note-left {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.restore-icons{
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.delete-note-text{
+  /* width: 70%; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
