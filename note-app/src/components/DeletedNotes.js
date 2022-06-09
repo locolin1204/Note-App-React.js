@@ -12,7 +12,6 @@ const DeletedNotes = ({
 }) => {
 	return (
 		<div className="delete-note">
-			<div className="delete-note-left">
 				<MdSettingsBackupRestore
 					className="restore-icons"
 					size="1.3em"
@@ -21,7 +20,6 @@ const DeletedNotes = ({
 					}}
 				/>
 				<div className="delete-note-text">{text}</div>
-			</div>
 			<GoX
 				className="cross-icon"
 				size="1.3em"

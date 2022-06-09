@@ -5,10 +5,11 @@ const DeletedNotesList = ({
 	deleteNotes,
 	handleDeleteForever,
 	handleRestoreNote,
+    handleClearAll
 }) => {
 	return (
 		<div className="delete-notes-list">
-			<h3 className="delete-notes-heading">Deleted Notes</h3>
+			<h3 className="delete-notes-heading">Deleted Notes <button className="clearall-button" onClick={()=>{handleClearAll()}}>Clear</button></h3>
 			{deleteNotes.map(deleteNote => (
 				<div key={deleteNote.id}>
 					<DeletedNotes

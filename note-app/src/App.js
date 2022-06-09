@@ -30,6 +30,15 @@ const App = () => {
 		},
 	];
 
+  const originalDeletedNotes = [
+		{
+			id: nanoid(),
+			text: "I am deletedddddddddddddddddddd.",
+			date: "12/06/2019",
+		},
+	];
+
+
 	const [notes, setNotes] = useState(originalNotes);
 	const [darkMode, setDarkMode] = useState(false);
 	const [searchText, setSearchText] = useState("");
@@ -49,11 +58,7 @@ const App = () => {
 	useEffect(() => {
 		localStorage.setItem("react-deleted-notes-app-data",JSON.stringify(deleteNotes));
 	}, [deleteNotes]);
-	// let hasRenderedNotesRef = useRef(false);
-	// useEffect(() => {
-	//   if (notes) hasRenderedNotesRef.current = true;
-	//   else hasRenderedNotesRef.current = false;
-	// },[notes])
+
 	const addNote = text => {
 		const date = new Date();
 		const newNote = {
@@ -87,6 +92,10 @@ const App = () => {
 		setDeleteNotes(newDelNote);
 	};
 
+  const clearAll = () => {
+    setDeleteNotes([]);
+  }
+
 	const createDelNotes = (id, text, date) => {
 		const newDelNote = {
 			id: id,
@@ -99,10 +108,14 @@ const App = () => {
 
 	const setReset = () => {
 		setNotes(originalNotes);
+    setDeleteNotes(originalDeletedNotes);
 	};
 
 	const deleteAll = () => {
-		setNotes([]);
+		const delNotes = [...deleteNotes, ...notes];
+    console.log(delNotes);
+    setDeleteNotes(delNotes);
+    setNotes([])
 	};
 
 	return (
@@ -130,6 +143,7 @@ const App = () => {
 							deleteNotes={deleteNotes}
 							handleRestoreNote={restoreNote}
 							handleDeleteForever={foreverDelete}
+							handleClearAll={clearAll}
 						/>
 					</div>
 				</div>

@@ -19,7 +19,7 @@ code {
   background-color: #28282B;
 }
 
-.dark-mode h1{
+.dark-mode h1, .dark-mode h3{
   color: white;
 }
 
@@ -204,7 +204,6 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.4em;
-  display: flex;
   align-items: center;
 }
 
@@ -215,33 +214,28 @@ button:hover {
 .delete-notes-heading {
   margin-top: 0em;
   margin-bottom: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .delete-note .cross-icon{
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
   cursor: pointer;
-  /* border: 1px solid red; */
 }
 
 .delete-note:hover .cross-icon{
   opacity: 100;
 }
 
-.delete-note-left {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  /* border: 1px solid red; */
-}
-
 .restore-icons{
-  margin-right: 1em;
   cursor: pointer;
 }
 
 .delete-note-text{
-  /* width: 70%; */
+  display: inline-block;
+  width: 70%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
