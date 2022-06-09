@@ -137,11 +137,11 @@ button:hover {
 }
 
 .left-container-bottom {
-  width:70%;
+  width: 69%;
 }
 
 .right-container-bottom {
-  width: 30%;
+  width: 29%;
 }
 
 
@@ -188,7 +188,7 @@ button:hover {
 .container-bottom{
   display: flex;
   flex-direction: row;
-  column-gap: 1.5rem;
+  column-gap: 2%;
 }
 
 .delete-notes-list{
