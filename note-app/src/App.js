@@ -33,7 +33,7 @@ const App = () => {
   const originalDeletedNotes = [
 		{
 			id: nanoid(),
-			text: "I am deletedddddddddddddddddddd.",
+			text: "I am deleted.",
 			date: "12/06/2019",
 		},
 	];
@@ -47,18 +47,28 @@ const App = () => {
 	useEffect(() => {
 		const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
 		const savedDeleteNotes = JSON.parse(localStorage.getItem("react-deleted-notes-app-data"));
+		const savedDarkMode = JSON.parse(localStorage.getItem("react-dark-mode-app-data"));
+
 		if (savedNotes) setNotes(savedNotes);
 		if (savedDeleteNotes) setDeleteNotes(savedDeleteNotes);
+    if (savedDarkMode) setDarkMode(savedDarkMode);
 	}, []);
+
+  useEffect(() => {
+		localStorage.setItem("react-dark-mode-app-data", JSON.stringify(darkMode));
+	}, [darkMode]);
 
 	useEffect(() => {
 		localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
 	}, [notes]);
 
-	useEffect(() => {
-		localStorage.setItem("react-deleted-notes-app-data",JSON.stringify(deleteNotes));
-	}, [deleteNotes]);
+  useEffect(()=>{
+    localStorage.setItem(
+			"react-deleted-notes-app-data", JSON.stringify(deleteNotes));
+  },[deleteNotes])
 
+  
+  
 	const addNote = text => {
 		const date = new Date();
 		const newNote = {

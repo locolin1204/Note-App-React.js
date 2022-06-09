@@ -14,6 +14,8 @@ code {
 
 /* DARK MODE  */
 
+
+
 .dark-mode {
   transition: 0.3s;
   background-color: #28282B;
@@ -28,12 +30,12 @@ code {
   color: #e7e7e7;
 }
 
-.dark-mode .toggle, .dark-mode .reset{
+.dark-mode .toggle, .dark-mode .reset, .dark-mode .clearall-button{
   background-color: #515151;
   color: #e7e7e7;
 }
 
-.dark-mode .toggle:hover, .dark-mode .reset:hover{
+.dark-mode .toggle:hover, .dark-mode .reset:hover, .dark-mode .clearall-button:hover{
   background-color: #727272;
 }
 
@@ -47,13 +49,14 @@ code {
 }
 
 .dark-mode .note{
-  background-color: #723ed4;
+  background-color: #5b30ab;
+  /* background-color: #404040; */
   /* background: linear-gradient(30deg, rgba(204,43,94,1) 5%, rgba(117,58,136,1) 70%); */
   color: #e7e7e7;
 }
 
 .dark-mode .note.new{
-  background-color: #bb3ed4;
+  background-color: #A92AB8;
 }
 
 .dark-mode textarea, .dark-mode ::placeholder, .dark-mode input{
@@ -66,9 +69,14 @@ code {
   color: #e7e7e7;
 }
 
+.dark-mode .delete-note{
+  color: #e7e7e7;
+  background-color: #494949;
+}
+
 /* DEFAULT MODE */
 
-.light-mode {
+.light-mode{
   transition: 0.3s;
 }
 
