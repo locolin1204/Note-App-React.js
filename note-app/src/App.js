@@ -33,7 +33,7 @@ const App = () => {
   const originalDeletedNotes = [
 		{
 			id: nanoid(),
-			text: "I am deleted.",
+			text: "I am a deleted note.",
 			date: "12/06/2019",
 		},
 	];

@@ -12,14 +12,18 @@ const DeletedNotes = ({
 }) => {
 	return (
 		<div className="delete-note">
-				<MdSettingsBackupRestore
-					className="restore-icons"
-					size="1.3em"
-					onClick={() => {
-						handleRestoreNote(deleteNote);
-					}}
-				/>
+			<MdSettingsBackupRestore
+				className="restore-icon"
+				size="1.3em"
+				onClick={() => {
+					handleRestoreNote(deleteNote);
+				}}
+			/>
+			<div className="delete-note-middle">
 				<div className="delete-note-text">{text}</div>
+				<div className="delete-note-date">{date}</div>
+			</div>
+
 			<GoX
 				className="cross-icon"
 				size="1.3em"
