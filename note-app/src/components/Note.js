@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDeleteForever } from "react-icons/md";
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-import { enterAnimation } from "./NotesList";
+import {  motion } from "framer-motion/dist/framer-motion";
+import {  } from "./NotesList";
 
 const Note = ({ id, text, date, handleDeleteNote, index }) => {
 	return (

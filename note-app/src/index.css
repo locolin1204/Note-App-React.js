@@ -12,12 +12,13 @@ code {
     monospace;
 }
 
+
+
 /* DARK MODE  */
 
 
 
 .dark-mode {
-  transition: 0.3s;
   background-color: #28282B;
 }
 
@@ -26,7 +27,7 @@ code {
 }
 
 .dark-mode .save{
-  background-color: #8d2ea0;
+  background-color: #782381;
   color: #e7e7e7;
 }
 
@@ -37,15 +38,16 @@ code {
 
 .dark-mode .toggle:hover, .dark-mode .reset:hover, .dark-mode .clearall-button:hover{
   background-color: #727272;
+  transition: 0.3s;
 }
 
 .dark-mode .save:hover{
-  background-color: #953ca7;
+  background-color: #641e6c;
   cursor: pointer;
 }
 
 .dark-mode .delete-icon:hover{
-  background-color: #5b32a7;
+  background-color: #472a7d;
 }
 
 .dark-mode .note{
@@ -56,7 +58,7 @@ code {
 }
 
 .dark-mode .note.new{
-  background-color: #A92AB8;
+  background-color: #942c9f
 }
 
 .dark-mode textarea, .dark-mode ::placeholder, .dark-mode input{
@@ -74,11 +76,14 @@ code {
   background-color: #494949;
 }
 
+.dark-mode .restore-icon:hover{
+  background-color: #3b3b3b;
+}
+
+
 /* DEFAULT MODE */
 
-.light-mode{
-  transition: 0.3s;
-}
+
 
 .header {
   display:flex;
@@ -95,7 +100,7 @@ code {
   min-height: 100vh;
 }
 
-.notes-list{
+.notes-list {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -121,7 +126,6 @@ button {
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
-  transition: 0.3s;
 }
 
 .toggle, .reset{
@@ -133,6 +137,7 @@ button {
 }
 
 button:hover {
+  transition: 0.3s;
   background-color: #f6f6f6;
   cursor: pointer;
 }
@@ -172,7 +177,6 @@ button:hover {
   cursor: pointer;
   border-radius: 25%;
   padding: 1%;
-  transition: 0.3s;
 }
 
 .delete-icon:hover{
@@ -250,7 +254,6 @@ button:hover {
   cursor: pointer;
   border-radius: 25%;
   padding: 1%;
-  transition: 0.3s;
 }
 
 .restore-icon:hover{

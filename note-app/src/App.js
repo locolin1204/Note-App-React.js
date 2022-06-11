@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import { nanoid } from "nanoid";
 import NotesList from "./components/NotesList";
 import Search from "./components/Search";
 import Header from "./components/Header";
 import DeletedNotesList from "./components/DeletedNotesList";
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 const App = () => {
 	const originalNotes = [
@@ -35,6 +34,11 @@ const App = () => {
 			id: nanoid(),
 			text: "I am a deleted note.",
 			date: "12/06/2019",
+		},
+		{
+			id: nanoid(),
+			text: "Why I am deleted :(",
+			date: "09/06/2019",
 		},
 	];
 
