@@ -11,7 +11,7 @@ const DeletedNotesList = ({
 	return (
 		<div className="delete-notes-list">
 			<h3 className="delete-notes-heading">
-				Deleted Notes{" "}
+				Recently Deleted{" "}
 				<button
 					className="clearall-button"
 					onClick={() => {
