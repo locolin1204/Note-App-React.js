@@ -3,7 +3,7 @@
 
 You may try out the Note App [here](https://locolin1204.github.io/Note-App-React.js).
 
-# Functions
+# Features
 ### __1. Searching Notes__
 You may type in the `search bar` to filter out your notes!
 
